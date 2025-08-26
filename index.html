@@ -52,6 +52,39 @@
             line-height: 1.6;
         }
 
+        .links {
+            margin: 2rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-icon {
+            font-size: 1.2rem;
+        }
+
         .loader {
             width: 50px;
             height: 50px;
@@ -187,6 +220,18 @@
     <div class="container">
         <h1>Coming Soon</h1>
         <p>We're working hard to bring you something amazing. Stay tuned for updates!</p>
+        
+        <div class="links">
+            <a href="https://www.linkedin.com/in/jinzheng-li/" target="_blank" class="link-btn">
+                <span class="link-icon">💼</span>
+                LinkedIn
+            </a>
+            <a href="https://inspirehep.net/authors/2651858" target="_blank" class="link-btn">
+                <span class="link-icon">📚</span>
+                INSPIRE-HEP
+            </a>
+        </div>
+        
         <div class="loader"></div>
     </div>
 </body>
